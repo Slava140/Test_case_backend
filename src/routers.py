@@ -1,8 +1,8 @@
 from fastapi import APIRouter, HTTPException
 from fastapi.responses import JSONResponse, Response
 
-from services import products_service
-from schemas import ProductWithoutID
+from src.services import products_service
+from src.schemas import ProductWithoutID
 
 products_router = APIRouter(prefix="/products", tags=["products"])
 
@@ -88,7 +88,7 @@ def update_product(product_id: int, schema: ProductWithoutID):
 def delete_product(product_id: int) -> Response:
     try:
         products_service.delete_product(product_id)
-        return Response(status_code=202)
+        return Response(status_code=204)
     except ValueError as error:
         raise HTTPException(
             status_code=404,

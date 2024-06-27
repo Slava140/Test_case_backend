@@ -1,5 +1,5 @@
-from repositories import ProductsRepository, products_repository
-from schemas import ProductWithID, ProductWithoutID
+from src.repositories import ProductsRepository, products_repository
+from src.schemas import ProductWithID, ProductWithoutID
 
 
 class ProductsService:
