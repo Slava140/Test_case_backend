@@ -1,7 +1,6 @@
 /.venv/
 /.env
 /.env_prod
-/.gitignore
 /.idea/
 /src/migrations/
 /src/__pycache__/
