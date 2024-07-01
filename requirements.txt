@@ -2,8 +2,9 @@ fastapi
 pydantic
 pydantic-settings
 sqlalchemy
-psycopg2
 psycopg2-binary
+psycopg2
 alembic
 uvicorn
 python-dotenv
+gunicorn
